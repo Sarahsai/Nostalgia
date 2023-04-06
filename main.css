@@ -1,0 +1,269 @@
+.airtable-image{
+  width: 200px;
+}
+
+.airtable-item{
+  border: 1px solid black;
+}
+
+.filter-show{
+  background-color: gray;
+  display: block;
+}
+
+.filter-hide{
+  display: none;
+
+}
+@font-face {
+    font-family: myFont;
+    src: url('Mostera.ttf');
+  }
+
+h1{
+  font-family: myFont;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: orange;
+    line-height: 1;
+    text-align: center;
+ animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00eaff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 100px #00eaff;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00eaff, 0 0 40px #00eaff, 0 0 70px #00eaff, 0 0 80px #00eaff, 0 0 150px #00eaff;
+    }
+}
+
+
+h2{
+  font-family: Arial, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: orange;
+    line-height: 2;
+    text-align: center;
+}
+
+h3{
+  font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: purple;
+    line-height: 1;
+    text-align: center;
+}
+h4{
+  font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: purple;
+    line-height: 1;
+    text-align: center;
+}
+
+img {
+			max-width: 115%;
+			height: auto;
+       transition: transform 0.2s;
+       position: relative;
+       display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+
+		}
+
+    img:hover {
+      transform: scale(2);
+   }
+
+    div {
+	border-top: 6px solid orange;
+	border-right: 1px dotted orange;
+	border-left: 1px double orange;
+}
+
+
+ .button{
+   font-family: Arial, sans-serif;
+   text-align: center;
+   font-size: 100px;
+    line-height: 1.5;
+ }
+
+ button {
+     display: inline-block;
+     padding: 10px 20px;
+     background-color: #FFD700;
+     color: darkorange;
+     font-size: 18px;
+     font-family: 'Comic Sans MS', cursive, sans-serif;
+     border-radius: 30px;
+     transition: background-color 0.3s;
+ }
+
+ button:hover {
+     background-color: #FFA500;
+     transform: scale(1.1);
+ }
+
+ button:active {
+     background-color: #FF8C00;
+ }
+
+.context-container{
+  background-color: #f8c291;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+header{
+    background-color: #FFC107;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 36px;
+    color: #FFF;
+    margin-right: 20px;
+    font-family: 'Comic Sans MS', cursive;
+    text-shadow: 2px 2px #FF6347;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header:hover:after {
+    transform: scaleX(1);
+}
+
+.smiley{
+  position: absolute;
+width: 150px;
+height: 200px;
+transform: rotate(320deg) scale(1.2);
+border: none;
+margin-right: 35%;
+margin-top: 40px;
+}
+
+.sady{
+  position: absolute;
+width: 150px;
+height: 200px;
+transform: rotate(55deg) scale(1.2);
+border: none;
+margin-left: 30%;
+
+}
+
+.music{
+border: none;
+width: 200px;
+height: 200px;
+animation-name: rotateAnimation;
+ animation-duration: 3s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ position: absolute;
+ margin-left: 85%;
+  margin-top: -50px;
+
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg); /* Rotate the image from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate the image to 360 degrees */
+  }
+}
+
+
+.music2{
+border: none;
+width: 200px;
+height: 200px;
+animation-name: rotateAnimation;
+ animation-duration: 3s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+position: absolute;
+ margin-top: -50px;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg); /* Rotate the image from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate the image to 360 degrees */
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-device-width: 320px) and (max-device-width: 667px) {
+  /* CSS rules for iPhone */
+  .airtable-image{
+    width: 150px;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  h2{
+    font-size: 0.8rem;
+  }
+
+  h3, h4{
+    font-size: 0.8rem;
+  }
+
+  .button{
+    font-size: 40px;
+  }
+
+  .context-container{
+    max-width: 400px;
+  }
+
+  .smiley{
+    width: 100px;
+    height: 150px;
+    margin-right: 20%;
+    margin-top: 30px;
+  }
+
+  .sady{
+    width: 100px;
+    height: 150px;
+    margin-left: 15%;
+  }
+
+  .music, .music2{
+    width: 150px;
+    height: 150px;
+    margin-top: -40px;
+  }
+}
